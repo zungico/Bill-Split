@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8074D457299BE9F00079DCEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D456299BE9F00079DCEB /* AppDelegate.swift */; };
 		8074D459299BE9F00079DCEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D458299BE9F00079DCEB /* SceneDelegate.swift */; };
-		8074D45B299BE9F00079DCEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D45A299BE9F00079DCEB /* ViewController.swift */; };
-		8074D45E299BE9F00079DCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8074D45C299BE9F00079DCEB /* Main.storyboard */; };
+		8074D45B299BE9F00079DCEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D45A299BE9F00079DCEB /* MainViewController.swift */; };
 		8074D460299BE9F20079DCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8074D45F299BE9F20079DCEB /* Assets.xcassets */; };
 		8074D463299BE9F20079DCEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8074D461299BE9F20079DCEB /* LaunchScreen.storyboard */; };
+		8074D46E299C0A590079DCEB /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D46D299C0A590079DCEB /* TipsView.swift */; };
+		8074D470299C0AB60079DCEB /* TipsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D46F299C0AB60079DCEB /* TipsViewCell.swift */; };
+		8074D472299C3E410079DCEB /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D471299C3E410079DCEB /* PersonView.swift */; };
+		8074D474299CE1440079DCEB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8074D473299CE1440079DCEB /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8074D453299BE9F00079DCEB /* Bill Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8074D456299BE9F00079DCEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8074D458299BE9F00079DCEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8074D45A299BE9F00079DCEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8074D45D299BE9F00079DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8074D45A299BE9F00079DCEB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8074D45F299BE9F20079DCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8074D462299BE9F20079DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8074D464299BE9F20079DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8074D46D299C0A590079DCEB /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		8074D46F299C0AB60079DCEB /* TipsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewCell.swift; sourceTree = "<group>"; };
+		8074D471299C3E410079DCEB /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		8074D473299CE1440079DCEB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		8074D455299BE9F00079DCEB /* Bill Split */ = {
 			isa = PBXGroup;
 			children = (
-				8074D456299BE9F00079DCEB /* AppDelegate.swift */,
-				8074D458299BE9F00079DCEB /* SceneDelegate.swift */,
-				8074D45A299BE9F00079DCEB /* ViewController.swift */,
-				8074D45C299BE9F00079DCEB /* Main.storyboard */,
+				8074D45A299BE9F00079DCEB /* MainViewController.swift */,
+				8074D46D299C0A590079DCEB /* TipsView.swift */,
+				8074D46F299C0AB60079DCEB /* TipsViewCell.swift */,
+				8074D471299C3E410079DCEB /* PersonView.swift */,
+				8074D473299CE1440079DCEB /* ResultViewController.swift */,
 				8074D45F299BE9F20079DCEB /* Assets.xcassets */,
+				8074D46A299BF1230079DCEB /* Application  */,
 				8074D461299BE9F20079DCEB /* LaunchScreen.storyboard */,
 				8074D464299BE9F20079DCEB /* Info.plist */,
 			);
 			path = "Bill Split";
+			sourceTree = "<group>";
+		};
+		8074D46A299BF1230079DCEB /* Application  */ = {
+			isa = PBXGroup;
+			children = (
+				8074D456299BE9F00079DCEB /* AppDelegate.swift */,
+				8074D458299BE9F00079DCEB /* SceneDelegate.swift */,
+			);
+			path = "Application ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +144,6 @@
 			files = (
 				8074D463299BE9F20079DCEB /* LaunchScreen.storyboard in Resources */,
 				8074D460299BE9F20079DCEB /* Assets.xcassets in Resources */,
-				8074D45E299BE9F00079DCEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8074D45B299BE9F00079DCEB /* ViewController.swift in Sources */,
+				8074D46E299C0A590079DCEB /* TipsView.swift in Sources */,
+				8074D45B299BE9F00079DCEB /* MainViewController.swift in Sources */,
+				8074D474299CE1440079DCEB /* ResultViewController.swift in Sources */,
 				8074D457299BE9F00079DCEB /* AppDelegate.swift in Sources */,
+				8074D472299C3E410079DCEB /* PersonView.swift in Sources */,
+				8074D470299C0AB60079DCEB /* TipsViewCell.swift in Sources */,
 				8074D459299BE9F00079DCEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8074D45C299BE9F00079DCEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8074D45D299BE9F00079DCEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8074D461299BE9F20079DCEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +303,6 @@
 				INFOPLIST_FILE = "Bill Split/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +329,6 @@
 				INFOPLIST_FILE = "Bill Split/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
